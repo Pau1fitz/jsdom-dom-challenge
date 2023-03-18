@@ -29,13 +29,9 @@ const timeout = setInterval(() => {
 
 const handleLike = () => {
   const content = counter.innerHTML;
-
   const listItem = document.createElement("li");
-
   const allListItems = [...document.querySelectorAll("li")];
-
   const lastItem = allListItems[allListItems.length - 1];
-
   const text = `number ${content} was liked ${likeCount} times`;
 
   if (text === lastItem?.innerHTML) {
